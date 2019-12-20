@@ -6,7 +6,7 @@ services:
       container_name: ${PROJECT_NAME}-redis
 
     postgres:
-      image: postgres:9.5-alpine
+      image: postgres:12.1-alpine
       container_name: ${PROJECT_NAME}-postgres
       volumes:
          - "./sourcefiles/postgres:/var/lib/postgresql/data"
